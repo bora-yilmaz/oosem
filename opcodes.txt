@@ -1,0 +1,256 @@
+00 nop / null
+01
+02
+03
+04 
+05
+06
+07
+08
+09
+0a
+0b
+0c
+0d
+0e
+0f
+10 "set reg val" set a register to a value 
+11 "mov reg1 reg2" move data from reg2 to reg1
+12 "ldptr reg1 reg2" get data from pointer in reg2 and set reg1 to said data
+13 "stptr reg1 reg2" access address from reg1 and write to said address from reg2
+14 "add reg1 reg2 reg3" reg1 = reg2 + reg3
+15 "sub reg1 reg2 reg3" reg1 = reg2 - reg3
+16 "mul reg1 reg2 reg3" reg1 = reg2 * reg3
+17 "div reg1 reg2 reg3" reg1 = reg2 / reg3
+18 "and reg1 reg2 reg3" reg1 = reg2 & reg3
+19 "or reg1 reg2 reg3" reg1 = reg2 | reg3
+1a "xor reg1 reg2 reg3" reg1 = reg2 ^ reg3
+1b "not reg1 reg2" reg1 = ~reg2
+1c "reducebool reg" convert reg to 1 or 0 depending on truthiness
+1d
+1e
+1f
+20 "nextsection" seperates one section of code from another ("structdef maincode 0x20 00 00 00 00 00 00 00 funcdef")
+21 "defstruct len1 len2 id" defines a struct with field lengths len1 and len2 and identifier id
+22 "addfield strid len" adds a field of length len to the struct with id strid
+23 
+24 "getstr reg addr strid fieldnum bytenum" gets bytenum'th byte from the field fieldnum from the object of type strid that starts on addr and stores the byte into reg
+25 "setstr reg addr strid fieldnum bytenum" accesses bytenum'th byte from the field fieldnum from the object of type strid that starts on addr and writes a byte from reg 
+26 
+27
+28 "call funcnum" calls the function in the section numbered funcnum
+29 "ret" returns from the function to the line it was called
+2a 
+2b
+2c
+2d
+2e
+2f
+30 "cmp reg1 reg2" compares reg1 and reg2
+31 "je line" jumps to line if last comparison is eq
+32 "jne line" jumps to line if last comparison is not eq
+33 "jl line" jumps to line if last comparison is lt
+34 "jnl line" jumps to line if last comparison is not lt
+35 "jg line" jumps to line if last comparison is gt
+36 "jng line" jumps to line if last comparison is not gt
+37 "jump line" jumps to line
+38
+39
+3a
+3b
+3c
+3d
+3e
+3f
+40 "wrch reg" writes the byte in reg to the console as a char 
+41
+42
+43
+44
+45
+46
+47 "rech reg" reads a char as a byte from the console to store in reg
+48
+49
+4a
+4b
+4c
+4d
+4e
+4f
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+5a
+5b
+5c
+5d
+5e
+5f
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+6a
+6b
+6c
+6d
+6e
+6f
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+7a
+7b
+7c
+7d
+7e
+7f
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+8a
+8b
+8c
+8d
+8e
+8f
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+9a
+9b
+9c
+9d
+9e
+9f
+a0
+a1
+a2
+a3
+a4
+a5
+a6
+a7
+a8
+a9
+aa
+ab
+ac
+ad
+ae
+af
+b0
+b1
+b2
+b3
+b4
+b5
+b6
+b7
+b8
+b9
+ba
+bb
+bc
+bd
+be
+bf
+c0
+c1
+c2
+c3
+c4
+c5
+c6
+c7
+c8
+c9
+ca
+cb
+cc
+cd
+ce
+cf
+d0
+d1
+d2
+d3
+d4
+d5
+d6
+d7
+d8
+d9
+da
+db
+dc
+dd
+de
+df
+e0
+e1
+e2
+e3
+e4
+e5
+e6
+e7
+e8
+e9
+ea
+eb
+ec
+ed
+ee
+ef
+f0
+f1
+f2
+f3
+f4
+f5
+f6
+f7
+f8
+f9
+fa
+fb
+fc
+fd
+fe
+ff
