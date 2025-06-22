@@ -86,7 +86,7 @@ Special commands and their meanings:
 
 ### Compiling and usage
 
-To compile the source code into an executable, just save the program file "main.c" in the same folder with the header file "header.h" and compile with your preferred c compiler. The executable tells you the correct usage when you run it without command line arguments.
+To compile the source code into an executable, just save the program file "main.c" in the same folder with the header file "linkedlist.h" and compile with your preferred c compiler. The executable tells you the correct usage when you run it without command line arguments.
 
 ---
 
